@@ -1,1 +1,1 @@
-web:gunicorn MLPredict.wsgl
+web: gunicorn MLPredict.wsgi
