@@ -18,7 +18,7 @@ def predict_chances(request):
         petal_width = float(request.POST.get('petal_width'))
 
         # Unpickle model
-        model = pd.read_pickle(r"C:\Users\USER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.9\DJANGOML\MLPredict\new_model.pickle")
+        model = pd.read_pickle("new_model.pickle")
         # Make prediction
         result = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
 
