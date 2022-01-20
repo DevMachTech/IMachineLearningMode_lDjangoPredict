@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'MLPredict.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'deusjoinlsiqj6',
+        'USER': 'voimofgkxmuuwz',
+        'PASSWORD': 'dc1e56ec57fb93edbb875430438873aa263a614cb9c4fedf4b7430404cc2c20a',
+        'HOST': 'ec2-3-232-22-121.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
